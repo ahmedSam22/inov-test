@@ -1,6 +1,6 @@
 <template>
   <div class="page--header text-center">
-    <Navbar class="mb-3" />
+    <Navbar class="mb-3 w-100" />
 
     <h1>طور متجرك ووسع آفاق تجارتك مع سوق تطبيقات زد</h1>
     <p>
@@ -18,6 +18,10 @@
 .page--header {
   display: grid;
   gap: 30px;
+  @media (max-width : 575px) {
+      display: flex;
+      flex-wrap: wrap;
+  }
   h1 {
     color: #8d5da7;
     font-weight: bolder;

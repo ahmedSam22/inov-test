@@ -1,7 +1,7 @@
 <template>
   <div>
     <section class="container">
-      <ul class="d-flex w-100 d">
+      <ul class="w-100 toResponsive" id="forToggle">
         <li>
           <img src="../assets/logo.png" alt="" />
         </li>
@@ -11,21 +11,82 @@
         <li><router-link to="/"></router-link> طور تطبيق</li>
       </ul>
     </section>
+
+    <div class="accordion w-100" id="accordionExample">
+      <div class="accordion-item w-100">
+        <h2 class="accordion-header" id="headingOne">
+          <span
+            class="accordion-button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseOne"
+            aria-expanded="true"
+            aria-controls="collapseOne"
+          >
+            <img src="../assets/logo.png" alt="" />
+          </span>
+        </h2>
+        <div
+          id="collapseOne"
+          class="accordion-collapse collapse show w-100"
+          aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body w-100">
+            <ul class="w-100">
+              <li><router-link to="/"></router-link> الرئيسية</li>
+              <li><router-link to="/"></router-link> التصنيفات</li>
+              <li><router-link to="/"></router-link> التطبيقات</li>
+              <li><router-link to="/"></router-link> طور تطبيق</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
-<script>
-export default {};
-</script>
+
 <style scoped lang="scss">
-ul {
+.toResponsive {
+  display: flex;
   list-style: none;
   align-items: center;
   padding: 0 177px; //to chamge .
+  @media (max-width: 1245px) {
+    padding: 0;
+  }
+  @media (max-width: 445px) {
+    display: none;
+  }
   li {
     font-size: 18px;
     font-weight: 600;
     margin-left: 100px;
+    @media (max-width: 800px) {
+      margin-left: 30px;
+      font-size: 14px;
+    }
+  }
+}
+.accordion {
+  width: 100% !important;
+  @media (min-width: 445px) {
+    display: none;
+  }
+  ul {
+    list-style: none;
+    line-height: 20px;
   }
 }
 </style>
+
+<script >
+export default {
+  data() {
+    return {
+      toggle: false,
+    };
+  },
+  methods: {},
+};
+</script>
