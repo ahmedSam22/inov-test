@@ -79,6 +79,9 @@ export default {
 <style scoped lang="scss">
 .card--container {
   flex-wrap: nowrap;
+  @media (max-width:1000px) {
+    overflow-x: scroll;
+  }
   &__card {
     background: #f7f7f7;
     border-radius: 10px;

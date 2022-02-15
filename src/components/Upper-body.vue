@@ -1,10 +1,18 @@
 <template>
-  <div class="main">
+<section class="container">
+     <div class="main">
     <div class="dot-pattern"></div>
-    <div class="main__slider"></div>
+    <div class="main__slider">
+        <img src="../assets/logo.png" height="100"  alt="" srcset="">
+        <div class="main__slider__layer">
+
+        </div>
+    </div>
 
     <div class="bg-circle"></div>
   </div>
+</section>
+ 
 </template>
 
 <script>
@@ -27,6 +35,28 @@ export default {};
     background: #8d5da7;
     border-radius: 40px;
     z-index: 1;
+    overflow: hidden;
+    position: relative;
+    @media (max-width:770px) {
+        width: 450px;
+        height: 349.29px;
+    }
+    img{
+        position: absolute;
+        top: calc(549 / 2) - 50px;
+        left: calc(847 / 2) - 50px;
+        opacity: .7;
+        @media (max-width:770px) {
+            // display: none;
+        }
+    }
+    &__layer{
+        height: 100%;
+        width: 100%;
+        background: url("../assets/bg.jpg");
+        background-size: cover;
+    }
+
   }
 }
 .dot-pattern {
