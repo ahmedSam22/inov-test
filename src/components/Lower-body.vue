@@ -115,6 +115,7 @@ export default {};
     align-items: center;
     @media (max-width: 770px) {
       padding: 0;
+      height: 350px;
     }
     &__slider {
       width: 846.89px;

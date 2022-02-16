@@ -37,7 +37,7 @@
       border-bottom-right-radius: 20%;
       @media (max-width:420px) {
   
-      margin: 5px auto;
+      margin: auto;
       
     }
     }
