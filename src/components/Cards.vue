@@ -3,9 +3,9 @@
      <h3 class="text-center text-bolder">التطبيقات المميزة</h3>
       <p class="text-center text-bold">تطبيقات تقدم حلول وخدمات مميزة نوصي بتجربتها</p>
 
-  <div class="card--container d-flex mt-5">
+  <div class="card--container d-flex mt-5 row">
     <div
-      class="card--container__card"
+      class="card--container__card col-3"
       v-for="(card, index) of cards"
       :key="index"
     >
@@ -83,7 +83,7 @@ export default {
 
 <style scoped lang="scss">
 .card--container {
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   @media (max-width:1000px) {
     overflow-x: scroll;
   }

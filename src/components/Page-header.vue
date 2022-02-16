@@ -1,8 +1,11 @@
 <template>
+           <Navbar class="mb-5 w-100" />
 
-  <div class="page--header text-center">
-    <Navbar class="mb-3 w-100" />
-    <h1>طور متجرك ووسع آفاق تجارتك مع سوق تطبيقات زد</h1>
+<div class="container">
+  <div class="row">
+   <div class="page--header text-lg-center col-12">
+     
+    <h1 class="mt-5">طور متجرك ووسع آفاق تجارتك مع سوق تطبيقات زد</h1>
     <p>
       طوّر تجارتك من خلال تطبيقات و حلول سوق تطبيقات زد التي تساعدك في نمو
       أرباحك عبر إدارة عمليات متجرك بشكل فعّال و احترافي
@@ -12,6 +15,10 @@
       <i class="fa-solid fa-angle-left pe-2"></i>
     </button>
   </div>
+</div>
+</div>
+
+ 
 </template>
 
 <style scoped lang="scss">
@@ -26,6 +33,9 @@
     color: #8d5da7;
     font-weight: bolder;
     margin: 0;
+    @media (max-width : 575px) {
+      width: 60%;
+  }
   }
   p {
     width: 38%;
@@ -34,6 +44,9 @@
     font-size: 18px;
     color: #111;
     line-height: 34px;
+    @media (max-width : 575px) {
+      margin: 0;
+  }
   }
   &__btn-custom {
     width: 295px;
@@ -45,6 +58,9 @@
     &:hover {
       color: white;
     }
+    @media (max-width : 575px) {
+      margin: 0;
+  }
   }
 }
 </style>

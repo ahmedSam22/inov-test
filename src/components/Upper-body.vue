@@ -1,5 +1,7 @@
 <template>
-<section class="container">
+<section class="container p-0">
+  <div class="row">
+      <div class="col-12">
      <div class="main">
     <div class="dot-pattern"></div>
     <div class="main__slider">
@@ -11,6 +13,10 @@
 
     <div class="bg-circle"></div>
   </div>
+  </div>
+  </div>
+
+    
 </section>
  
 </template>
@@ -23,11 +29,17 @@ export default {};
 @import url("../style/Global.scss");
 .main {
   position: relative;
-  padding: 20px;
+  // padding: 20px;
   display: flex;
   justify-content: center;
   height: 700px;
   align-items: center;
+  @media (max-width:470px) {
+        width: 308px;
+  justify-content: start;
+
+        height: 349.29px;
+    }
 
   &__slider {
     width: 846.89px;
@@ -47,7 +59,7 @@ export default {};
         left: calc(847 / 2) - 50px;
         opacity: .7;
         @media (max-width:770px) {
-            // display: none;
+            display: none;
         }
     }
     &__layer{

@@ -1,8 +1,8 @@
 <template>
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md-6">
-        <div class="content p-5">
+      <div class="col-md-6 col-12">
+        <div class="content  p-5">
           <div class="content__text">
             <h1>كل ما تحتاجه لنمو متجرك فى مكان واحد</h1>
             <p>
@@ -34,7 +34,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6 col-6">
         <div class="main">
           <div class="dot-pattern"></div>
           <div class="main__slider">
