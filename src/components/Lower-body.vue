@@ -27,14 +27,14 @@
                 <p>أسعار تنافسية مع تجربة مجانية وباقات اشتراك متنوعة </p>
               </li>
             </ul>
-            <button class="btn content__utilities__btn-custom">
+            <button class="btn content__utilities__btn-custom mb-3">
               تصفّح التطبيقات
               <i class="fa-solid fa-angle-left pe-2"></i>
             </button>
           </div>
         </div>
       </div>
-      <div class="col-md-6 col-8">
+      <div class="col-md-6  col-8">
         <div class="main">
           <div class="dot-pattern"></div>
           <div class="main__slider">
