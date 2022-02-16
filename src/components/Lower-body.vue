@@ -27,6 +27,10 @@
                 <span>أسعار تنافسية مع تجربة مجانية وباقات اشتراك متنوعة </span>
               </li>
             </ul>
+            <button class="btn content__utilities__btn-custom">
+      تصفّح التطبيقات
+      <i class="fa-solid fa-angle-left pe-2"></i>
+    </button>
           </div>
         </div>
       </div>
@@ -78,6 +82,17 @@ export default {};
                     color: #000;
                 }
             }
+        }
+        &__btn-custom{
+    width: 295px;
+    height: 60px;
+    background: #8d5da7;
+    color: #fdb515;
+    font-size: 18px;
+    margin: auto;
+    &:hover {
+      color: white;
+    }
         }
     }
   }

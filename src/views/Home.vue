@@ -3,10 +3,10 @@
   <div class="col-md-12">
     <pageHeader />
   </div>
-    <div class="col-md-12 mb-5">
+    <div class="mb-5">
       <Body />
     </div>
-    <div class="col-md-12 mt-5">
+    <div class="col-md-12 mt-5 mb-5">
       <Cards />
     </div>
     <div class="col-md-12">

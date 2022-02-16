@@ -13,7 +13,7 @@
     </section>
 
     <div class="accordion w-100" id="accordionExample">
-      <div class="accordion-item w-100">
+      <div class="accordion-item ">
         <h2 class="accordion-header" id="headingOne">
           <span
             class="accordion-button"
@@ -27,11 +27,11 @@
         </h2>
         <div
           id="collapseOne"
-          class="accordion-collapse collapse show w-100"
+          class="accordion-collapse collapse show "
           aria-labelledby="headingOne"
           data-bs-parent="#accordionExample"
         >
-          <div class="accordion-body w-100">
+          <div class="accordion-body ">
             <ul class="w-100">
               <li><router-link to="/"></router-link> الرئيسية</li>
               <li><router-link to="/"></router-link> التصنيفات</li>
@@ -76,6 +76,9 @@
   ul {
     list-style: none;
     line-height: 20px;
+    li{
+      text-align: right;
+    }
   }
 }
 </style>

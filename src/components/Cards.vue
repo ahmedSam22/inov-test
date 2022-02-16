@@ -29,7 +29,12 @@
         </div>
       </div>
     </div>
+    
   </div>
+  <button class="btn btn-custom">
+      جميع التطبيقات
+      <i class="fa-solid fa-angle-left pe-2"></i>
+    </button>
 </section>
      
 </template>
@@ -113,5 +118,10 @@ export default {
       }
     }
   }
+}
+.btn-custom{
+  color: #ffd12f;
+  display: block;
+  margin:auto;
 }
 </style>
