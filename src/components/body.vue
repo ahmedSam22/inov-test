@@ -1,8 +1,6 @@
 <template>
-<div>
      <UpperBody class="mb-5" />
      <LowerBody class="mt-5" />
-</div>
   
 </template>
 

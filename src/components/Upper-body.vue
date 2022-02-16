@@ -1,13 +1,12 @@
 <template>
 <section class="container p-0">
   <div class="row">
-      <div class="col-12">
+      <div class="col-md-12 col-8 ">
      <div class="main">
     <div class="dot-pattern"></div>
-    <div class="main__slider">
+    <div class="main__slider ">
         <img src="../assets/logo.png" height="100"  alt="" srcset="">
         <div class="main__slider__layer">
-
         </div>
     </div>
 
@@ -35,7 +34,8 @@ export default {};
   height: 700px;
   align-items: center;
   @media (max-width:470px) {
-        width: 308px;
+    padding: 5px;
+        width: auto;
   justify-content: start;
 
         height: 349.29px;

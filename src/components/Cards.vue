@@ -1,8 +1,12 @@
 <template>
 <section class="container">
-     <h3 class="text-center text-bolder">التطبيقات المميزة</h3>
-      <p class="text-center text-bold">تطبيقات تقدم حلول وخدمات مميزة نوصي بتجربتها</p>
+  <div class="header col-md-12">
+ <h3 class="text-md-center text-bolder">التطبيقات المميزة</h3>
+      <p class="text-md-center text-bold">تطبيقات تقدم حلول وخدمات مميزة نوصي بتجربتها</p>
 
+  </div>
+  
+    
   <div class="card--container d-flex mt-5 row">
     <div
       class="card--container__card col-3"
@@ -82,6 +86,13 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.header{
+  p{
+    @media (max-width:400px) {
+    width: 60%;
+  }
+  }
+}
 .card--container {
   flex-wrap: wrap;
   @media (max-width:1000px) {

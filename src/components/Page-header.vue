@@ -46,6 +46,7 @@
     line-height: 34px;
     @media (max-width : 575px) {
       margin: 0;
+      width: 60%;
   }
   }
   &__btn-custom {

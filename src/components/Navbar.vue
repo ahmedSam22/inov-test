@@ -12,11 +12,11 @@
       </ul>
     </section>
 
-    <div class="accordion w-100" id="accordionExample">
+    <div class="accordion  w-100" id="accordionExample">
       <div class="accordion-item ">
         <h2 class="accordion-header" id="headingOne">
           <span
-            class="accordion-button"
+            class="accordion-button collapsed"
             data-bs-toggle="collapse"
             data-bs-target="#collapseOne"
             aria-expanded="true"
@@ -27,7 +27,7 @@
         </h2>
         <div
           id="collapseOne"
-          class="accordion-collapse collapse show "
+          class="accordion-collapse collapse  "
           aria-labelledby="headingOne"
           data-bs-parent="#accordionExample"
         >
