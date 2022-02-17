@@ -5,8 +5,9 @@
      <div class="main">
     <div class="dot-pattern"></div>
     <div class="main__slider ">
-        <img src="../assets/logo.png" height="100"  alt="" srcset="">
-        <div class="main__slider__layer">
+        <img src="../assets/logo.png" height="100" alt="" srcset="">
+        <div class="">
+               <Slider />
         </div>
     </div>
 
@@ -21,7 +22,13 @@
 </template>
 
 <script>
-export default {};
+  import Slider from './Slider.vue';
+
+export default {
+  components: {
+    Slider,
+  },
+};
 </script>
 
 <style lang="scss" scoped>

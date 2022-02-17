@@ -10,7 +10,7 @@
 export default {
 components:{
     UpperBody,
-    LowerBody
+    LowerBody,
 }
 };
 </script>
