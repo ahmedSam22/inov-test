@@ -1,10 +1,9 @@
 <template>
-
-  <div class="footer ">
-    <div class="footer__contact text-center container ">
+  <div class="footer">
+    <div class="footer__contact text-center container">
       <img src="../assets/logo.png" alt="" />
-      <ul class="d-flex ">
-        <li v-for="(icon,index) of icons" :key="index">
+      <ul class="d-flex">
+        <li v-for="(icon, index) of icons" :key="index">
           <i :class="icon" class="ms-4"></i>
         </li>
       </ul>
@@ -22,7 +21,7 @@
 .footer {
   background: #835d9d;
   &__contact {
-    @media (max-width:420px) {
+    @media (max-width: 420px) {
       display: flex;
       flex-direction: column;
       width: 60%;
@@ -35,17 +34,15 @@
       margin-top: 10px;
       border-top-left-radius: 20%;
       border-bottom-right-radius: 20%;
-      @media (max-width:420px) {
-  
-      margin: 5px auto;
-      
-    }
+      @media (max-width: 420px) {
+        margin: 5px auto;
+      }
     }
   }
   ul {
     list-style: none;
     justify-content: center;
-    @media (max-width:420px) {
+    @media (max-width: 420px) {
       justify-content: end;
     }
     li {
@@ -54,9 +51,8 @@
     }
   }
   &__chat {
-        align-items: baseline;
-@media (max-width:420px) {
- 
+    align-items: baseline;
+    @media (max-width: 420px) {
       width: 60%;
     }
     svg {
@@ -65,10 +61,10 @@
       border-radius: 50%;
       font-size: 30px;
       padding: 10px;
-          }
-          .up{
-            font-size: 20px;
-          }
+    }
+    .up {
+      font-size: 20px;
+    }
   }
 }
 </style>

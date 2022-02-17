@@ -13,18 +13,31 @@
           <div class="content__utilities">
             <ul>
               <li>
-                <img src="../assets/mng.png" class="ms-lg-3 d-block" alt="" srcset="" />
-                <p>
-                  سهولة ادارة و تفعيل تطبيقاتك من  لوحة تحكم متجرك
-                </p>
+                <img
+                  src="../../assets/mng.png"
+                  class="ms-lg-3 d-block"
+                  alt=""
+                  srcset=""
+                />
+                <p>سهولة ادارة و تفعيل تطبيقاتك من لوحة تحكم متجرك</p>
               </li>
               <li>
-                <img src="../assets/cs.png" class="ms-lg-3" alt="" srcset="" />
-                <p> دعم فني و تقني متكامل متوفر على مدار الساعة </p>
+                <img
+                  src="../../assets/cs.png"
+                  class="ms-lg-3"
+                  alt=""
+                  srcset=""
+                />
+                <p>دعم فني و تقني متكامل متوفر على مدار الساعة</p>
               </li>
               <li>
-                <img src="../assets/price.png" class="ms-lg-3" alt="" srcset="" />
-                <p>أسعار تنافسية مع تجربة مجانية وباقات اشتراك متنوعة </p>
+                <img
+                  src="../../assets/price.png"
+                  class="ms-lg-3"
+                  alt=""
+                  srcset=""
+                />
+                <p>أسعار تنافسية مع تجربة مجانية وباقات اشتراك متنوعة</p>
               </li>
             </ul>
             <button class="btn content__utilities__btn-custom mb-3">
@@ -34,14 +47,14 @@
           </div>
         </div>
       </div>
-      <div class="col-md-6  col-8">
+      <div class="col-md-6 col-8">
         <div class="main">
           <div class="dot-pattern"></div>
           <div class="main__slider">
-            <img src="../assets/logo.png" height="100" alt="" srcset="" />
-            <div class="main__slider__layer"></div>
+            <video autoplay loop class="w-100">
+              <source src="../../assets/lower.mp4" type="video/mp4" />
+            </video>
           </div>
-
           <div class="bg-circle"></div>
         </div>
       </div>
@@ -50,12 +63,13 @@
 </template>
 
 <script>
-export default {};
+export default {
+  components: {},
+};
 </script>
 
 <style lang="scss" scoped>
-@import url("../style/Global.scss");
-
+@import url("../../style/Global.scss");
 .container-fluid {
   background: rgba(250, 250, 252, 0.93);
   .content {
@@ -81,15 +95,15 @@ export default {};
           margin-bottom: 20px;
           display: flex;
           align-items: end;
- @media (max-width: 770px) {
-          align-items: center;
+          @media (max-width: 770px) {
+            align-items: center;
           }
           p {
             font-size: 18px;
             color: #000000;
             @media (max-width: 770px) {
-            font-size: 14px;
-          }
+              font-size: 14px;
+            }
           }
         }
       }
@@ -119,7 +133,7 @@ export default {};
     }
     &__slider {
       width: 846.89px;
-      height: 441px;
+      height: min-content;
       background: #8d5da7;
       border-radius: 40px;
       z-index: 1;
@@ -127,22 +141,6 @@ export default {};
       position: relative;
       @media (max-width: 770px) {
         width: 450px;
-        height: 349.29px;
-      }
-      img {
-        position: absolute;
-        top: calc(441px / 2) - 50px;
-        left: calc(450px / 2 ) + 50px;
-        opacity: 0.7;
-        @media (max-width: 770px) {
-          // display: none;
-        }
-      }
-      &__layer {
-        height: 100%;
-        width: 100%;
-        background: url("../assets/bg.jpg");
-        background-size: cover;
       }
     }
   }

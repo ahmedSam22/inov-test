@@ -1,46 +1,44 @@
 <template>
-<section class="container">
-  <div class="header col-md-12">
- <h3 class="text-md-center text-bolder">التطبيقات المميزة</h3>
-      <p class="text-md-center text-bold">تطبيقات تقدم حلول وخدمات مميزة نوصي بتجربتها</p>
+  <section class="container">
+    <div class="header col-md-12">
+      <h3 class="text-md-center text-bolder">التطبيقات المميزة</h3>
+      <p class="text-md-center text-bold">
+        تطبيقات تقدم حلول وخدمات مميزة نوصي بتجربتها
+      </p>
+    </div>
 
-  </div>
-  
-    
-  <div class="card--container d-flex mt-5 row">
-    <div
-      class="card--container__card col-3"
-      v-for="(card, index) of cards"
-      :key="index"
-    >
-      <div class="card--container__card__header">
-        <img :src="card.src" alt="" srcset="" width="44" height="44" />
-        <div class="me-2">
-          <span class="card--container__card__header__name">{{
-            card.name
-          }}</span>
-          <span class="card--container__card__header__rate">
-            <i class="fa-solid fa-star me-4"></i> {{ card.rate }}
-          </span>
-          <span class="card--container__card__header__developer">
-            تطوير :  <span class="text-muted">{{ card.developer }}</span> 
-          </span>
-          <div class="card--container__card__header__title mt-2">
-            <p class="m-0">
-              {{ card.title }}
-            </p>
+    <div class="card--container d-flex mt-5 row">
+      <div
+        class="card--container__card col-3"
+        v-for="(card, index) of cards"
+        :key="index"
+      >
+        <div class="card--container__card__header">
+          <img :src="card.src" alt="" srcset="" width="44" height="44" />
+          <div class="me-2">
+            <span class="card--container__card__header__name">{{
+              card.name
+            }}</span>
+            <span class="card--container__card__header__rate">
+              <i class="fa-solid fa-star me-4"></i> {{ card.rate }}
+            </span>
+            <span class="card--container__card__header__developer">
+              تطوير : <span class="text-muted">{{ card.developer }}</span>
+            </span>
+            <div class="card--container__card__header__title mt-2">
+              <p class="m-0">
+                {{ card.title }}
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    
-  </div>
-  <button class="btn btn-custom">
+    <button class="btn btn-custom">
       جميع التطبيقات
       <i class="fa-solid fa-angle-left pe-2"></i>
     </button>
-</section>
-     
+  </section>
 </template>
 <script>
 export default {
@@ -78,7 +76,7 @@ export default {
           developer: "عمر برهوم",
           title:
             "نظام الولاء الأمثل الذي يمكنك من رفع مبيعاتك نظام الولاء الأمثل الذي يمكنك من رفع مبيعاتك ",
-        }
+        },
       ],
     };
   },
@@ -86,16 +84,16 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.header{
-  p{
-    @media (max-width:400px) {
-    width: 60%;
-  }
+.header {
+  p {
+    @media (max-width: 400px) {
+      width: 60%;
+    }
   }
 }
 .card--container {
   flex-wrap: wrap;
-  @media (max-width:1000px) {
+  @media (max-width: 1000px) {
     overflow-x: scroll;
   }
   &__card {
@@ -130,9 +128,9 @@ export default {
     }
   }
 }
-.btn-custom{
+.btn-custom {
   color: #ffd12f;
   display: block;
-  margin:auto;
+  margin: auto;
 }
 </style>

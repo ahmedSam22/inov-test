@@ -11,9 +11,8 @@
         <li><router-link to="/"></router-link> طور تطبيق</li>
       </ul>
     </section>
-
-    <div class="accordion  w-100" id="accordionExample">
-      <div class="accordion-item ">
+    <div class="accordion w-100" id="accordionExample">
+      <div class="accordion-item">
         <h2 class="accordion-header" id="headingOne">
           <span
             class="accordion-button collapsed"
@@ -27,11 +26,11 @@
         </h2>
         <div
           id="collapseOne"
-          class="accordion-collapse collapse  "
+          class="accordion-collapse collapse"
           aria-labelledby="headingOne"
           data-bs-parent="#accordionExample"
         >
-          <div class="accordion-body ">
+          <div class="accordion-body">
             <ul class="w-100">
               <li><router-link to="/"></router-link> الرئيسية</li>
               <li><router-link to="/"></router-link> التصنيفات</li>
@@ -76,7 +75,7 @@
   ul {
     list-style: none;
     line-height: 20px;
-    li{
+    li {
       text-align: right;
     }
   }
@@ -90,6 +89,5 @@ export default {
       toggle: false,
     };
   },
-  methods: {},
 };
 </script>

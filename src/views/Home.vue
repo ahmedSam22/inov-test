@@ -28,7 +28,7 @@ import { defineComponent } from "vue";
 import pageHeader from "../components/Page-header.vue";
 import Footer from "../components/Footer.vue";
 import Cards from "../components/Cards.vue";
-import Body from "../components/body.vue";
+import Body from "../components/body/body.vue";
 
 export default defineComponent({
   name: "Home",
